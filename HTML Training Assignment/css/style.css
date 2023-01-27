@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
 body {
+    width: 100%;
     height:790px;
     align-items: center;
     justify-content: center;
@@ -71,7 +75,7 @@ body {
 .font {
     height: 100px;
     width: 500px;
-    font: normal normal 300 40px/47px Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 40px;
     margin-top: 10px;
     margin-bottom: 16px;
@@ -83,7 +87,7 @@ span {
 .fields {
     margin-top: 16px;
     margin-bottom: 11px;
-    /* width: 429px; */
+    width: 450px;
     display: grid;
 }
 input {
@@ -136,6 +140,7 @@ input {
     margin-top: 20px;
     margin-right: 85px;
     margin-bottom: 11px;
+    border: none;
 }
 .button2 {
     /* float: right; */
