@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-   
+    <title>innerpage</title>
+
     <link rel="stylesheet" href="css/innerpage.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
 </head>
 
 <body>
 
-    <div class="dashboard">
+    <div class="analysis">
         <nav class="navbar1">
-            <div class="logo">
+            <div class="logo1">
                 <img src="./images/menu-bar.svg" alt="logo" id="menubar-logo">
                 <img src="./images/logo.svg" alt="logo" id="weblogo">
             </div>
@@ -24,42 +24,194 @@
                 <img src="./images/search-icon.svg" alt="" id="search-icon">
                 <p>Search</p>
             </div>
-            <div class="user">
+            <div class="user1">
                 <img src="./images/notification-icon.svg" alt="" id="notification-icon">
                 <img src="./images/profile.png" alt="" id="profileicon">
                 <p>John Doe</p>
                 <img src="./images/select-downward.svg" alt="" id="selectdownward">
             </div>
         </nav>
-        <div class="maindashboard">
+        <div class="mainanalysis">
 
             <div class="sidebar1">
-                <div class="sidebardetail ">
+                <div class="sidebardetail1 ">
                     <img src="./images/dashboard-default.svg" alt="" id="deshboard-default">
                     <div>Dashboard</div>
                 </div>
-                <div class="sidebardetail graph-active-tab">
+                <div class="sidebardetail1 graph-active-tab">
                     <img src="./images/graph-active.svg" alt="" id="graph-active">
                     <div>Analysis</div>
                 </div>
-                <div class="sidebardetail">
+                <div class="sidebardetail1">
                     <img src="./images/inbox-default.svg" alt="" id="inbox-default">
                     <div>Inbox</div>
                 </div>
-                <div class="sidebardetail">
+                <div class="sidebardetail1">
                     <img src="./images/clock-default.svg" alt="" id="clock-default">
                     <div>History</div>
                 </div>
-                <div class="sidebardetail">
+                <div class="sidebardetail1">
                     <img src="./images/user-default.svg" alt="" id="user-default">
                     <div>Users</div>
                 </div>
-                <div class="sidebardetail">
+                <div class="sidebardetail1">
                     <img src="./images/maintenance-default.svg" alt="" id="maintenance-default">
                     <div>Maintenance</div>
                 </div>
-                <div class="sidebardetail">
+                <div class="sidebardetail1">
                     <img src="./images/setting-default.svg" alt="" id="setting-default">
                     <div>Setting</div>
                 </div>
             </div>
+
+            <div class="analysis-page">
+                <div id="analysisfont"> Analysis
+
+                </div>
+                <div class="analysisdata">
+                    <p class="columnnames">One Column</p>
+                    <form action=" ">
+                        <input type="text" placeholder="Name" class="first">
+                        <select class="first">
+                            <option>Dropdown</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <input class="second" type="textarea" placeholder="Multiple line">
+                    </form>
+                    <div class="secondcolumn">
+                        <p class="columnnames">Two Column</p>
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="User name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <select class="dropsecond">
+                                        <option>Dropdown</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="thirdcolumn">
+                        <p class="columnnames">Three Column</p>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="User name">
+                            </div>
+                            <div class="col">
+                                <fieldset disabled>
+                                    <div class="form-group">
+                                        <input type="text" id="disabledTextInput" class="form-control"
+                                            placeholder="Disabled input">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fourthcolumn">
+                        <p class="columnnames">Four Column</p>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Ui designer">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="User name">
+                            </div>
+                            <div class="col">
+                                <select class="dropthird">
+                                    <option>Select</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="otherelements">
+                        <p class="columnnames">Other Design Elements</p>
+                        <p id="otherele">File upload</p>
+
+                        <div class="upload"><button type="button" class="btn btn-outline-danger">
+                                <img src="images/cloud-upload-icon.svg" alt="Try Again">
+                                Upload</button>
+                            <p id="buttonsidetext">No item Selected</p>
+                        </div>
+
+                        <p id="radiobtn">Radio Button</p>
+                        <input type="radio" name="options" id="option2" class="radio1" autocomplete="off"> Option 1
+                        <input type="radio" name="options" id="option3" class="radio1" autocomplete="off"> Option 2
+                        <p id="boxandbar">Check Box</p>
+                        <input type="checkbox" class="radio1" checked autocomplete="off"> Option 1
+                        <input type="checkbox" class="radio1" checked autocomplete="off"> Option 2
+                        <p id="boxandbar">Snack Bar</p>
+                        <div class="row" id="row1">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-danger " id="errormes1">
+                                    <img class="errorm" src="images/error-icon.svg" alt="error">
+                                    This is an error message</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-info " id="errormes2">
+                                    <img class="errorm" src="images/info-icon.svg" alt="error">
+                                    This is an information message</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-warning errormessage">
+                                    <img class="errorm" src="images/warning-icon.svg" alt="error">
+                                    This is an warning message</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-success errormessage">
+                                    <img class="errorm" src="images/success-icon.svg" alt="error">
+                                    This is an success message</button>
+                            </div>
+                        </div>
+                        <p id="callto">Call to Action</p>
+                        <button type="button" class="btn btn-danger" id="primarybtn1">Primary</button>
+                        <button type="button" class="btn btn-outline-danger secondarybtn" id="secondarybtn1">Secondary</button>
+                        <p id="tab">Tabs</p>
+                        <p id="tabname"><span id="tab1"> Tab1 </span> <span id="tab2"> Tab2 </span> <span id="tab3"> Tab3 </span></p>
+                        <hr id="hr">
+                        <div class="tabdiv">
+                            <p id="tab1data">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has
+                                been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a
+                                galley of type and scrambled it to make a type specimen book. It has survived not only
+                                five
+                                centuries, but also the leap into electronic typesetting, remaining essentially
+                                unchanged.
+                                It was popularised in the 1960s with the release of Letraset sheets containing
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
