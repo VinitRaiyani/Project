@@ -17,94 +17,95 @@
     <div class="dashboard">
         <nav class="navbar1">
             <div class="logo1">
-                <img src="./images/menu-bar.svg" alt="logo" id="menubar-logo">
+                <button onclick="myfunction()" id="sidebutton"><img src="images/menu-bar.svg" alt="logo" id="menubar-logo"></button>
+                
                 <img src="./images/logo.svg" alt="logo" id="weblogo">
             </div>
             <div class="search1">
                 <img src="./images/search-icon.svg" alt="" id="search-icon">
-                <p>Search</p>
+                <input id="serch10" type="search" placeholder="Search" style="border: none;">
             </div>
             <div class="user1">
                 <img src="./images/notification-icon.svg" alt="" id="notification-icon">
                 <img src="./images/profile.png" alt="" id="profileicon">
                 <p>John Doe</p>
-                <img src="./images/select-downward.svg" alt="" id="selectdownward">
+                 <img src="./images/downward-arrow.svg" alt="" id="selectdownward">
             </div>
         </nav>
         <div class="maindashboard">
 
-            <div class="sidebar1">
-                <div class="sidebardetail1 dashboard-active-tab">
-                    <img src="./images/dashboard-active.svg" alt="" id="dashboard-active">
-                    <div>Dashboard</div>
+            <div class="sidebar1" id="sideid">
+                <div class="sideanalysis" id="avtivedashback1">
+                    <img src="./images/dashboard-active.svg" alt=""  class="icnimg">
+                    <span class="txtsidebar" id="activedash">Dashboard</span>
                 </div>
-                <div class="sidebardetail1">
-                    <img src="./images/graph-default.svg" alt="" id="graph-default">
-                    <div>Analysis</div>
+                <div class="sideanalysis">
+                    <img src="./images/graph-default.svg" alt="" class="icnimg">
+                    <span class="txtsidebar">Analysis</span>
                 </div>
-                <div class="sidebardetail1">
-                    <img src="./images/inbox-default.svg" alt="" id="inbox-default">
-                    <div>Inbox</div>
+                <div class="sideanalysis">
+                    <img src="./images/inbox-default.svg" alt="" class="icnimg">
+                    <span class="txtsidebar">Inbox</span>
                 </div>
-                <div class="sidebardetail1">
-                    <img src="./images/clock-default.svg" alt="" id="clock-default">
-                    <div>History</div>
+                <div class="sideanalysis">
+                    <img src="./images/clock-default.svg" alt="" class="icnimg">
+                    <span class="txtsidebar">History</span>
                 </div>
-                <div class="sidebardetail1">
-                    <img src="./images/user-default.svg" alt="" id="user-default">
-                    <div>Users</div>
+                <div class="sideanalysis">
+                    <img src="./images/user-default.svg" alt="" class="icnimg">
+                    <span class="txtsidebar">Users</span>
                 </div>
-                <div class="sidebardetail1">
-                    <img src="./images/maintenance-default.svg" alt="" id="maintenance-default">
-                    <div>Maintenance</div>
+                <div class="sideanalysis">
+                    <img src="./images/maintenance-default.svg" alt="" class="icnimg">
+                    <span class="txtsidebar">Maintenance</span>
                 </div>
-                <div class="sidebardetail1">
-                    <img src="./images/setting-default.svg" alt="" id="setting-default">
-                    <div>Setting</div>
+                <div class="sideanalysis">
+                    <img src="./images/setting-default.svg" alt="" class="icnimg">
+                    <span class="txtsidebar">Setting</span>
                 </div>
             </div>
             <div class="dashboard-page">
                 <div id="dashboardfont"> Dashboard
 
                 </div>
-                <div class="products">
-                    <div class="newproducts1">
+                <div class="products row">
+                    <div class="newproducts1 col">
                         <img src="./images/star.svg" alt="" id="star">
                         <div class="p1">
-                            <p id="productsize0">23,456</p>
-                            <p id="productsize"> New Products</p>
+                            <span id="productsize0">23,456</span><br>
+                            <span id="productsize"> New Products</span>
 
                         </div>
                     </div>
-                    <div class="newproducts2">
+                    <div class="newproducts2 col">
                         <img src="./images/new-product.svg" alt="" id="plus">
                         <div>
-                            <p id="productsize0">2345 </p>
-                            <p id="productsize"> Added Products</p>
+                            <span id="productsize0">2345 </span><br>
+                            <span id="productsize"> Added Products</span>
 
                         </div>
                     </div>
-                    <div class="newproducts2">
+                    <div class="newproducts2 col">
                         <img src="./images/total-product.svg" alt="" id="totalproduct">
                         <div>
-                            <p id="productsize0">32,456 </p>
-                            <p id="productsize">Total Products</p>
+                            <span id="productsize0">32,456 </span><br>
+                            <span id="productsize">Total Products</span>
 
                         </div>
                     </div>
-                    <div class="newproducts2">
+                    <div class="newproducts2 col">
                         <img src="./images/dollar-filled.svg" alt="" id="dollarfilled">
                         <div>
-                            <p id="productsize0">2345 </p>
-                            <p id="productsize"> Today's Sale</p>
+                            <span id="productsize0">2345 </span><br>
+                            <span id="productsize"> Today's Sale</span>
 
                         </div>
                     </div>
-                    <div class="newproducts1">
+                    <div class="newproducts3 col">
                         <img src="./images/money-bag.svg" alt="" id="moneybag">
                         <div>
-                            <p id="productsize0">33,5342 </p>
-                            <p id="productsize"> Total Sale</p>
+                            <span id="productsize0">33,5342 </span><br>
+                            <span id="productsize"> Total Sale</span>
 
                         </div>
                     </div>
@@ -124,25 +125,27 @@
                     <div class="graph2">
                         <p id="graph2name1">Sales by Country</p>
                         <img src="images/pie-chart.svg" alt="not supported">
-                        <div class="graph2list1">
-                           
-
-                            <p class="graph2name2"><svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" fill="#C8242F" class="bi bi-dot" viewBox="0 0 16 16">
-                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                              </svg>United States of America</p>
-                            <p class="graph2name2"><svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" fill="#A2B86C" class="bi bi-dot" viewBox="0 0 16 16">
-                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                              </svg>Canada</p>
+                        <div class="row">
+                            <div class="col">
+                                <p style="font-size: 12px;width: 200px;">
+                                <img src="images/radio-checked-icon.svg"  style="width: 20px;height: 20px;margin: 0px;"/>United States of America
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 12px;"><img src="images/radio-checked-icon.svg" style="width: 20px;height: 20px;margin: 0px;"/>Canada</p>
+                            </div>
                         </div>
-                        <div class="graph2list2">
-
-                            <p class="graph2name2"><svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" fill="#F16C20" class="bi bi-dot" viewBox="0 0 16 16">
-                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                              </svg>Russia</p>
-                            <p class="graph2name2" id="graph2name2second"><svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" fill="#EBC844" class="bi bi-dot" viewBox="0 0 16 16">
-                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                              </svg>India</p>
+                        <div class="row">
+                            <div class="col">
+                                <p style="font-size: 12px;width: 200px;">
+                                <img src="images/radio-checked-icon.svg" style="width: 20px;height: 20px;margin: 0px;"/>Russia
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 12px;"><img src="images/radio-checked-icon.svg" style="width: 20px;height: 20px;margin: 0px;"/>India</p>
+                            </div>
                         </div>
+                       
 
                     </div>
                 </div>
@@ -152,8 +155,8 @@
                      <p class="alldata">View All</p>
                     </div>
 
-                    
-                     <table class="table">
+                    <div class="table-responsive">
+                     <table class="table" id="table1">
                          <thead>
                              <tr>
                                  <th>INVOICE</th>
@@ -243,6 +246,7 @@
  
                          </tbody>
                      </table>
+                    </div>
                  </div>
             </div>
 
@@ -250,7 +254,7 @@
         </div>
     </div>
 
-
+<script src="js/java.js"></script>
 </body>
 
 </html>

@@ -184,10 +184,185 @@ a:link {
 }
 }
 @media only screen and (min-width:1001px) and (max-width:1440px) {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+body {
+    width: 100%;
+    height:auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+    
+}
+.container {
+    width: 100%;
+    height: auto;
+    /* top: 0px;
+    left: 0px; */
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+
+}
+
+.image {
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 82px;
+
+    
+}
+.img1 {
+    top: 72px;
+    left: 166px;
+    width: 100%;
+    height: 100%;
+    background: transparent url('img/Ellipse 2.png') 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 31px #0000000A;
+    border: 20px solid #FFFFFF;
+    border-radius: 50%;
+    
+}
+
+/* .img2 {
+    top: 106px;
+    left: 906px;
+    width: 272px;
+    height: 58px;
+} */
+.login {
+    width: 50%;
+    height: 50%;
+    float: right;
+    align-items: center;
+    margin-left: 82px;
+    /* background-color: black; */
+}
+.icon {
+    
+    width: 100%;
+    height: 10%;
+    /* float: left; */
+
+}
+.img2 {
+    width: 30%;
+    height: 100%;
+    top: 106px;
+    left: 906px;
+    margin-bottom: 3px;
+}
+.font {
+    height: 50%;
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px; 
+    /* margin-bottom: 6px; */
+}
+#fontp{
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+span {
+    font-weight:bolder ;
+    color: red;
+}
+.fields {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 80%;
+    height: 50%;
+    display: grid;
+}
+input {
+    padding-left: 15px;
+    width: 100%;
+}
+.fields1 {
+    
+    font-size: 20px;
+    font: normal normal normal 25px/33px Roboto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.fields2 {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    /* width: 429px; */
+    height: 30px;
+    font-size: 15px;
+    margin-top: 11px;
+    margin-bottom: 9px;
+}
+.fields3 {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    /* width: 429px; */
+    height: 30px;
+    font-size: 15px;
+    margin-top: 11px;
+    margin-bottom: 9px;
+}
+.buttons {
+    /* width: 429px; */
+    /* width: 500px; */
+    height: 20%;
+    display: flex;
+    align-items: center;
+
+}
+.button1 {
+    /* float: left; */
+    
+    background: #C8242F 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    color: white;
+    width: 30%;
+    height: 35px;
+    font-size: 15px;
+    margin-top: 4%;
+    margin-right: 20%;
+    margin-bottom: 11px;
+    border: none;
+}
+.button2 {
+    /* float: right; */
+    font-size: 13px;
+    margin-top: 4%;
+    margin-left: 10%;
+   
+}
+a:link {
+    color: #ADADAD;
+    text-decoration: none;
+}
+.register {
+    /* height: 20px; */
+    /* display: flex; */
+    width: 100%;
+    font-size: 13px;
+    margin-top: 3%;
+    color: #ADADAD;
+    font: normal normal normal 13px/20px Roboto;
+}
+.register1 {
+    color: #C8242F;
+    width: 100%;
+    font: normal normal normal 13px/20px Roboto;
+    opacity: 1;
+}
     
 }
 @media only screen and (min-width:1441px){
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
 body {
@@ -263,7 +438,7 @@ body {
 }
 .font {
     height: 100px;
-    width: 500px;
+    width: 600px;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
     margin-top: 10px;
@@ -309,9 +484,8 @@ input {
     margin-bottom: 20px;
 }
 .buttons {
-    /* top: 527px; */
-    /* left: 906px;     */
-    width: 429px;
+    /* width: 429px; */
+    width: 500px;
     height: 45px;
     display: flex;
     align-items: center;
@@ -335,7 +509,7 @@ input {
     /* float: right; */
     font-size: 15px;
     margin-top: 22px;
-    margin-left: 85px;
+    margin-left: 110px;
    
 }
 a:link {
