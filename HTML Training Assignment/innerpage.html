@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>innerpage</title>
 
+    <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/innerpage.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
+   
 </head>
 
 <body>
@@ -17,50 +18,51 @@
     <div class="analysis">
         <nav class="navbar1">
             <div class="logo1">
-                <img src="./images/menu-bar.svg" alt="logo" id="menubar-logo">
+                <button onclick="myfunction1()" id="sidebutton"><img src="images/menu-bar.svg" alt="logo" id="menubar-logo"></button>
+                
                 <img src="./images/logo.svg" alt="logo" id="weblogo">
             </div>
             <div class="search1">
                 <img src="./images/search-icon.svg" alt="" id="search-icon">
-                <p>Search</p>
+                <input id="serch10" type="search" placeholder="Search" style="border: none;">
             </div>
             <div class="user1">
                 <img src="./images/notification-icon.svg" alt="" id="notification-icon">
                 <img src="./images/profile.png" alt="" id="profileicon">
                 <p>John Doe</p>
-                <img src="./images/select-downward.svg" alt="" id="selectdownward">
+                 <img src="./images/downward-arrow.svg" alt="" id="selectdownward">
             </div>
         </nav>
         <div class="mainanalysis">
 
-            <div class="sidebar1">
-                <div class="sidebardetail1 ">
-                    <img src="./images/dashboard-default.svg" alt="" id="deshboard-default">
-                    <div>Dashboard</div>
+            <div class="sidebar1" id="sideid1">
+                <div class="sideanalysis" id="avtivedashback1">
+                    <img src="./images/dashboard-active.svg" alt=""  class="icnimg">
+                    <span class="txtsidebar" id="activedash">Dashboard</span>
                 </div>
-                <div class="sidebardetail1 graph-active-tab">
-                    <img src="./images/graph-active.svg" alt="" id="graph-active">
-                    <div>Analysis</div>
+                <div class="sideanalysis">
+                    <img src="./images/graph-default.svg" alt="" class="icnimg">
+                    <span class="txtsidebar">Analysis</span>
                 </div>
-                <div class="sidebardetail1">
-                    <img src="./images/inbox-default.svg" alt="" id="inbox-default">
-                    <div>Inbox</div>
+                <div class="sideanalysis">
+                    <img src="./images/inbox-default.svg" alt="" class="icnimg">
+                    <span class="txtsidebar">Inbox</span>
                 </div>
-                <div class="sidebardetail1">
-                    <img src="./images/clock-default.svg" alt="" id="clock-default">
-                    <div>History</div>
+                <div class="sideanalysis">
+                    <img src="./images/clock-default.svg" alt="" class="icnimg">
+                    <span class="txtsidebar">History</span>
                 </div>
-                <div class="sidebardetail1">
-                    <img src="./images/user-default.svg" alt="" id="user-default">
-                    <div>Users</div>
+                <div class="sideanalysis">
+                    <img src="./images/user-default.svg" alt="" class="icnimg">
+                    <span class="txtsidebar">Users</span>
                 </div>
-                <div class="sidebardetail1">
-                    <img src="./images/maintenance-default.svg" alt="" id="maintenance-default">
-                    <div>Maintenance</div>
+                <div class="sideanalysis">
+                    <img src="./images/maintenance-default.svg" alt="" class="icnimg">
+                    <span class="txtsidebar">Maintenance</span>
                 </div>
-                <div class="sidebardetail1">
-                    <img src="./images/setting-default.svg" alt="" id="setting-default">
-                    <div>Setting</div>
+                <div class="sideanalysis">
+                    <img src="./images/setting-default.svg" alt="" class="icnimg">
+                    <span class="txtsidebar">Setting</span>
                 </div>
             </div>
 
@@ -82,20 +84,20 @@
                     <div class="secondcolumn">
                         <p class="columnnames">Two Column</p>
                         <form>
-                            <div class="row">
+                            <div class="row twocolumnrow">
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Name" style="height: 49px;width: 500px">
+                                    <input type="text" class="form-control" placeholder="Name" style="height: 15px;width: 100px; font-size:8px;">
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="User name" style="height: 49px;width: 500px">
+                                    <input type="text" class="form-control" placeholder="User name" style="height: 15px;width: 100px; font-size:8px;">
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row twocolumnrow">
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Password" style="height: 49px;width: 500px">
+                                    <input type="text" class="form-control" placeholder="Password" style="height: 15px;width: 100px; font-size:8px;">
                                 </div>
                                 <div class="col">
-                                    <select class="dropsecond" style="height: 49px;width: 500px;">
+                                    <select class="dropsecond" style="height: 15px;width: 100px; font-size:8px;">
                                         <option>Dropdown</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -106,36 +108,36 @@
                     </div>
                     <div class="thirdcolumn">
                         <p class="columnnames">Three Column</p>
-                        <div class="row">
+                        <div class="row twocolumnrow">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Name">
+                                <input type="text" class="form-control thirdcolumncol" placeholder="Name" style="font-size:8px">
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="User name">
+                                <input type="text" class="form-control thirdcolumncol" placeholder="User name" style="font-size:8px">
                             </div>
                             <div class="col">
                                 <fieldset disabled>
                                     <div class="form-group">
-                                        <input type="text" id="disabledTextInput" class="form-control"
-                                            placeholder="Disabled input">
+                                        <input type="text" id="disabledTextInput" class="form-control thirdcolumncol"
+                                            placeholder="Disabled input" style="font-size:8px">
                                     </div>
                             </div>
                         </div>
                     </div>
                     <div class="fourthcolumn">
                         <p class="columnnames">Four Column</p>
-                        <div class="row">
+                        <div class="row twocolumnrow">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Ui designer">
+                                <input type="text" class="form-control  thirdcolumncol" placeholder="Ui designer" style="font-size:8px">
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Name">
+                                <input type="text" class="form-control  thirdcolumncol" placeholder="Name" style="font-size:8px">
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="User name">
+                                <input type="text" class="form-control  thirdcolumncol" placeholder="User name" style="font-size:8px">
                             </div>
                             <div class="col">
-                                <select class="dropthird">
+                                <select class="dropthird  thirdcolumncol" >
                                     <option>Select</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -148,10 +150,10 @@
                         <p class="columnnames">Other Design Elements</p>
                         <p id="otherele">File upload</p>
 
-                        <div class="upload"><button type="button" class="btn btn-outline-danger">
+                        <div class="upload"><button type="button" class="btn btn-outline-danger" id="uploadbutton">
                                 <img src="images/cloud-upload-icon.svg" alt="Try Again">
                                 Upload</button>
-                            <p id="buttonsidetext">No item Selected</p>
+                            <span id="buttonsidetext">No item Selected</span>
                         </div>
 
                         <p id="radiobtn">Radio Button</p>
@@ -162,30 +164,30 @@
                         <input type="checkbox" class="radio1" checked autocomplete="off"> Option 2
                         <p id="boxandbar">Snack Bar</p>
                         <div class="row" id="row1">
-                            <div class="col-6">
+                            <div class="col">
                                 <button type="button" class="btn btn-outline-danger " id="errormes1">
                                     <img class="errorm" src="images/error-icon.svg" alt="error">
                                     This is an error message</button>
                             </div>
-                            <div class="col-6">
+                            <div class="col">
                                 <button type="button" class="btn btn-outline-info" id="errormes2">
                                     <img class="errorm" src="images/info-icon.svg" alt="error">
                                     This is an information message</button>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col">
                                 <button type="button" class="btn btn-outline-warning errormessage">
                                     <img class="errorm" src="images/warning-icon.svg" alt="error">
                                     This is an warning message</button>
                             </div>
-                            <div class="col-6">
+                            <div class="col">
                                 <button type="button" class="btn btn-outline-success errormessage">
                                     <img class="errorm" src="images/success-icon.svg" alt="error">
                                     This is an success message</button>
                             </div>
-                        </div>
-                        <p id="callto">Call to Action</p>
+                        </div> 
+                        <!-- <p id="callto">Call to Action</p>
                         <button type="button" class="btn btn-danger" id="primarybtn1">Primary</button>
                         <button type="button" class="btn btn-outline-danger secondarybtn" id="secondarybtn1">Secondary</button>
                         <p id="tab">Tabs</p>
@@ -202,16 +204,16 @@
                                 unchanged.
                                 It was popularised in the 1960s with the release of Letraset sheets containing
                             </p>
-                        </div>
-                    </div>
+                        </div> -->
+                    </div> 
                 </div>
 
-            </div>
+            </div> 
         </div>
 
 
     </div>
-
+    <script src="js/java.js"></script>
 </body>
 
 </html>
